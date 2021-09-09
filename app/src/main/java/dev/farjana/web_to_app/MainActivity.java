@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         siteImagesArrayList.add(new SiteImages(R.mipmap.linkin,"https://www.linkedin.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.twitter,"https://www.twitter.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.insta,"https://www.instagram.com"));
-        siteImagesArrayList.add(new SiteImages(R.mipmap.snapchat,"https://www.snapchat.com/"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.snapchat,"https://www.snapchat.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.whatsapp,"https://www.whatsapp.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.github,"https://www.github.com"));
 

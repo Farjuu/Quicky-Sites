@@ -45,8 +45,6 @@ public class GridReyclerAdapter extends RecyclerView.Adapter<GridReyclerAdapter.
             recyclerContext.startActivity(intent);
         });
 
-
-
         return holder;
     }
 
