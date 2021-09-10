@@ -29,7 +29,6 @@ public class WebViewScreen extends AppCompatActivity {
 
         Intent receiverIntent = getIntent();
         String searchUrl = receiverIntent.getStringExtra("Url");
-
         webView.loadUrl(searchUrl);
         webView.setWebViewClient(new WebViewController());
         webSettings.setJavaScriptEnabled(true);

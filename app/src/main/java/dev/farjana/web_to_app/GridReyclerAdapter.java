@@ -38,9 +38,10 @@ public class GridReyclerAdapter extends RecyclerView.Adapter<GridReyclerAdapter.
         view.setOnClickListener(view1 -> {
 
             int position = holder.getAbsoluteAdapterPosition();
-            intent = new Intent(parent.getContext(),WebViewScreen.class);
+            intent = new Intent(parent.getContext(),SplashAct.class);
 
             intent.putExtra("Url",siteImageArrayList.get(position).getSiteUrl());
+            intent.putExtra("ImageId",siteImageArrayList.get(position).getImageSiteId());
 
             recyclerContext.startActivity(intent);
         });
@@ -62,7 +63,7 @@ public class GridReyclerAdapter extends RecyclerView.Adapter<GridReyclerAdapter.
     }
 
     public static class GridRecyclerViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView siteImage;
+        private final CircleImageView siteImage;
         public GridRecyclerViewHolder(@NonNull View itemView) {
             super(itemView);
             siteImage = itemView.findViewById(R.id.image1);
