@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -44,33 +43,30 @@ public class MainActivity extends AppCompatActivity {
     private void addSitesInArrayList() {
 
         siteImagesArrayList = new ArrayList<>();
-        siteImagesArrayList.add(new SiteImages(R.mipmap.google,"https://www.google.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.google2,"https://www.google.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.wikipedia,"https://www.wikipedia.org"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.yahoo,"https://www.yahoo.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.bing,"https://www.bing.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.gmail,"https://www.gmail.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.googlemeet,"https://www.meet.google.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.dropbox,"https://www.dropbox.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.drive,"https://www.drive.google.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.git,"https://www.github.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.fb,"https://www.facebook.com"));
-        siteImagesArrayList.add(new SiteImages(R.mipmap.youtube,"https://www.youtube.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.linkin,"https://www.linkedin.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.twitter,"https://www.twitter.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.insta,"https://www.instagram.com"));
-        siteImagesArrayList.add(new SiteImages(R.mipmap.snapchat,"https://www.snapchat.com"));
-        siteImagesArrayList.add(new SiteImages(R.mipmap.whatsapp,"https://www.whatsapp.com"));
-        siteImagesArrayList.add(new SiteImages(R.mipmap.github,"https://www.github.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.amazon,"https://www.amazon.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.netflix,"https://www.netflix.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.upwork,"https://www.upwork.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.fiver,"https://www.fiverr.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.paypal,"https://www.paypal.com"));
 
 
 
     }
 
 
-
-    private void search() {
-
-
-            Intent intent = new Intent(getApplicationContext(), WebViewScreen.class);
-            intent.putExtra("urlText","www.google.com");
-            startActivity(intent);
-
-    }
 
     private void initializeAll() {
 
