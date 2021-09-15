@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         siteImagesArrayList.add(new SiteImages(R.mipmap.yahoo,"https://www.yahoo.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.bing,"https://www.bing.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.gmail,"https://www.gmail.com"));
-        siteImagesArrayList.add(new SiteImages(R.mipmap.googlemeet,"https://www.meet.google.com"));
+        siteImagesArrayList.add(new SiteImages(R.mipmap.googlemeet,"https://meet.google.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.dropbox,"https://www.dropbox.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.drive,"https://www.drive.google.com"));
         siteImagesArrayList.add(new SiteImages(R.mipmap.git,"https://www.github.com"));

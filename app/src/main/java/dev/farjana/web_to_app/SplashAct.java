@@ -31,7 +31,7 @@ public class SplashAct extends AppCompatActivity {
             intent.putExtra("Url",searchUrl);
             startActivity(intent);
             finish();
-        },5000);
+        },3000);
 
 
     }
