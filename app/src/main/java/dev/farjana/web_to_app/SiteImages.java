@@ -5,7 +5,7 @@ public class SiteImages {
     private int imageSiteId;
     private String siteUrl;
 
-    SiteImages(int imageSiteId,String siteUrl){
+    SiteImages(int imageSiteId, String siteUrl) {
         this.imageSiteId = imageSiteId;
         this.siteUrl = siteUrl;
     }
@@ -17,6 +17,7 @@ public class SiteImages {
     public void setISiteUrl(String siteUrl) {
         this.siteUrl = siteUrl;
     }
+
     public int getImageSiteId() {
         return imageSiteId;
     }

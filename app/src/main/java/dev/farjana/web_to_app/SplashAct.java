@@ -12,6 +12,7 @@ public class SplashAct extends AppCompatActivity {
 
     CircleImageView splashImageView;
     Handler handler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,17 +22,17 @@ public class SplashAct extends AppCompatActivity {
 
         Intent receiverIntent = getIntent();
         String searchUrl = receiverIntent.getStringExtra("Url");
-        int imageId = receiverIntent.getIntExtra("ImageId",1);
+        int imageId = receiverIntent.getIntExtra("ImageId", 1);
 
         splashImageView.setImageResource(imageId);
 
         handler = new Handler();
-        handler.postDelayed((Runnable) () -> {
-            Intent intent = new Intent(SplashAct.this,WebViewScreen.class);
-            intent.putExtra("Url",searchUrl);
+        handler.postDelayed(() -> {
+            Intent intent = new Intent(SplashAct.this, WebViewScreen.class);
+            intent.putExtra("Url", searchUrl);
             startActivity(intent);
             finish();
-        },3000);
+        }, 3000);
 
 
     }

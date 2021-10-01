@@ -25,7 +25,7 @@ public class WebViewScreen extends AppCompatActivity {
         setContentView(R.layout.activity_web_view_screen);
 
         webView = findViewById(R.id.webview);
-        webSettings =  webView.getSettings();
+        webSettings = webView.getSettings();
 
         Intent receiverIntent = getIntent();
         String searchUrl = receiverIntent.getStringExtra("Url");
@@ -38,7 +38,7 @@ public class WebViewScreen extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode == KeyEvent.KEYCODE_BACK && this.webView.canGoBack()){
+        if (keyCode == KeyEvent.KEYCODE_BACK && this.webView.canGoBack()) {
             this.webView.goBack();
             return true;
         }
@@ -48,26 +48,26 @@ public class WebViewScreen extends AppCompatActivity {
 }
 
 
-  class WebViewController extends WebViewClient {
+class WebViewController extends WebViewClient {
 
     @Override
     public void onPageStarted(WebView view, String url, Bitmap favicon) {
         super.onPageStarted(view, url, favicon);
     }
 
-      @Override
-      public void onLoadResource(WebView view, String url) {
-          super.onLoadResource(view, url);
-      }
+    @Override
+    public void onLoadResource(WebView view, String url) {
+        super.onLoadResource(view, url);
+    }
 
-      @Override
+    @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         view.loadUrl(url);
         return true;
     }
 
-      @Override
-      public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-          return super.shouldOverrideUrlLoading(view, request);
-      }
-  }
+    @Override
+    public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+        return super.shouldOverrideUrlLoading(view, request);
+    }
+}
